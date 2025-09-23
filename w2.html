@@ -1,0 +1,51 @@
+<html>
+<head>
+</head>
+<body>
+ <div class="container">
+ <h1>College Application Form</h1>
+ <label for="firstName">First Name</label>
+ <input type="text" id="firstName" name="firstName" required><br>
+ 
+ <label for="lastName">Last Name</label>
+ <input type="text" id="lastName" name="lastName" required><br>
+ 
+ <label for="dob">Date of Birth</label>
+ <input type="date" id="dob" name="dob" required><br>
+ 
+ <label for="email">Email</label>
+ <input type="email" id="email" name="email" required><br>
+ 
+ <label for="phone">Phone Number</label>
+ <input type="text" id="phone" name="phone" required><br>
+ 
+ <label for="gender">GENDER:</label><br>
+ <label for="male">Male</label>
+ <input type="radio" id="male" name="gender" value="male"><br>
+ 
+ <label for="female">Female</label>
+ <input type="radio" id="female" name="gender" value="female"><br>
+ 
+ <label for="address">Address</label>
+ <textarea id="address" name="address" rows="4" required></textarea><br>
+ 
+ <label for="course">Course Applied For</label>
+ <select id="course" name="course" required>
+ <option value="computer_science">Computer Science</option>
+ <option value="business_administration">Business Administration</option>
+ <option value="mechanical_engineering">Mechanical Engineering</option>
+ <option value="electrical_engineering">Electrical Engineering</option>
+ <option value="civil_engineering">Civil Engineering</option>
+ <option value="arts">Arts</option>
+ <option value="others">Others</option>
+ </select><br>
+ <label for="documents">Upload Documents</label>
+ <input type="file" id="documents" name="documents" required><br>
+ <label>
+ <input type="checkbox" name="terms" required> I agree to the 
+ <a href="#">terms and conditions</a>.
+ </label><br>
+ <button type="submit">Submit Application</button><br>
+ </div>
+ </body>
+</html>
