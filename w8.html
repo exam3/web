@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Check Array for Specified Value</title>
+<script>
+ function checkArray()
+ {
+ const array = [1, 2, 3, 4, 5];
+ const value = parseInt(document.getElementById('inputValue').value);
+ if (isNaN(value)) {
+ document.getElementById('result').textContent = 'Please enter a valid number.';
+ return;
+ }
+ if (array.includes(value)) 
+ {
+ document.getElementById('result').textContent = `Array contains ${value}`;
+ } else 
+ {
+ document.getElementById('result').textContent = `Array does not contain ${value}`;
+ } }
+ </script></head><body>
+ <h1>Check Array for Specified Value</h1>
+ <label for="inputValue">Enter a value:</label>
+ <input type="text" id="inputValue">
+ <button onclick="checkArray()">Check Array</button>
+ <p id="result"></p></body></html>
