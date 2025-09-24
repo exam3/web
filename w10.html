@@ -1,0 +1,20 @@
+<html>
+ <script 
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+ <body ng-app="myApp" >
+ <h1>Uppercase & Lowercase Filter of AngularJS </h1>
+ <div ng-init="firstName='jamal'; lastName='mohamed'">
+ Upper case: {{firstName + ' ' +lastName | uppercase}} 
+ </div>
+ <div ng-controller="myCtrl">
+ Lower case: {{lowerCaseText}}
+ </div>
+ <script>
+ var app = angular.module('myApp', []);
+ app.controller('myCtrl', function($scope, $filter) {
+ $scope.originalText = "jamal mohamed";
+ $scope.lowerCaseText = $filter('lowercase')($scope.originalText);
+ });
+ </script>
+ </body>
+</html>
