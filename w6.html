@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Arithmetic Operations</title>
+</head>
+<body>
+<input type="text" id="myInput1" placeholder="Enter a value"> 
+<input type="text" id="myInput2" placeholder="Enter b value"> 
+<input type="button"onClick="Arithmetic()"Value="Calculate">
+<script type="text/javascript">
+function Arithmetic()
+{
+var result;
+ a= document.getElementById("myInput1").value; 
+ b= document.getElementById("myInput2").value;
+result=parseInt(a) + parseInt(b);
+document.write("<br>Addition of a & b="+result);
+result=a-b;
+document.write("<br>Subtraction of a & b="+result);
+result=a*b;
+document.write("<br>Multiplication of a & b="+result);
+result=a/b;
+document.write("<br>Division of a & b="+result);
+}
+</script>
+</body>
+</html>
